@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nebula</title>
+    <link rel="shortcut icon" type="x-icon" href="backGround/icon3.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="backGround/icon3.png" class="spotify-icon" />
+        <h2 id="name">Nebula</h2>
+      </div>
+      <div class="end">
+        <a>About us</a>
+        <a>Documentation</a>
+        <a>Contact</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="land">
+        <h3 id="start-txt"></h3>
+        <button id="start-btn" data-aos="zoom-in" data-aos-duration="1000">
+          Create Playlist
+        </button>
+      </div>
+      <div class="mood"></div>
+      <div class="genres"></div>
+      <div class="playlist"></div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#start-txt", {
+        strings: ["Hey there! Do you want to create a playlist?"],
+        typeSpeed: 50,
+        showCursor: false,
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
