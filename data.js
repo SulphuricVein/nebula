@@ -3,7 +3,7 @@ export const songData = {
     pop: [
       {
         title: "Uptown Funk - Mark Ronson ft. Bruno Mars",
-        image: "nebula/trackImages/uptownFunk.png",
+        image: "./trackImages/uptownFunk.png",
       },
       {
         title: "Can't Stop the Feeling!- Justin Timberlake",
