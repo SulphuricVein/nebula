@@ -5,8 +5,12 @@
   font-family: "Poppins";
 }
 body {
+  width: 100%;
   background-image: url("backGround/colorful-abstract-nebula-space-background.jpg");
-  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  height: 100vh;
 }
 
 .container {
@@ -112,9 +116,9 @@ button:hover {
   gap: 1rem;
   margin-bottom: 1rem;
   align-items: center;
-  width: 100%;
+  width: 60vw;
   position: relative;
-  left: 15%;
+  left: 30%;
 }
 .song-id > img {
   width: 4rem;
@@ -127,7 +131,7 @@ button:hover {
   margin-top: 1rem;
   height: 3rem;
   background: none;
-  color: white;
+
   border-radius: 20px;
   padding: 0.5rem 1rem;
 }
@@ -207,4 +211,24 @@ a {
 }
 a:hover {
   transform: scale(1.03);
+}
+@media (max-width: 600px) {
+  .end {
+    display: none;
+  }
+  #start-txt {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cards > img {
+    width: 15rem;
+  }
+  .song-id {
+    left: 20%;
+  }
 }
