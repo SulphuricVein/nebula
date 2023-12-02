@@ -231,4 +231,13 @@ a:hover {
   .song-id {
     left: 20%;
   }
+   .navbar {
+    position: relative;
+  }
+  .logo {
+    gap: 0.7rem;
+    position: absolute;
+    left: 3%;
+    top: 10%;
+  }
 }
